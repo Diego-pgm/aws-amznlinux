@@ -17,7 +17,7 @@ pipeline{
         }
         stage('Terraform Apply'){
             steps{
-                sh 'terraform apply --auto-approve -var="ami_id=$AMI_ID" -var="instance_name=$INSTANCE_NAME"'
+                sh 'terraform apply --auto-approve -var="ami_id=$AMI_ID" -var="name=$INSTANCE_NAME"'
             }
         }
     }
