@@ -18,6 +18,7 @@ pipeline{
         }
         stage('Terraform Apply'){
             steps{
+                sh 'echo $INSTANCE_TYPE'
                 sh 'terraform apply --auto-approve -var="ami_id=$AMI_ID" -var="name=$INSTANCE_NAME" -var="instance_type=$INSTANCE_TYPE"'
             }
         }
