@@ -4,7 +4,7 @@ variable "ami_id" {
 }
 
 variable "name" {
-    default = "amzn01"
+    default = "dum01"
     description = "Instance name"
   
 }
