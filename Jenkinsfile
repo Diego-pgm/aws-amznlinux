@@ -4,7 +4,7 @@ pipeline{
         string(name: 'AMI_ID', defaultValue: '', description: 'AMI ID to use')
         string(name: 'INSTANCE_NAME', defaultValue: '', description: 'Name of the EC2 instance')
         string(name: 'INSTANCE_TYPE', defaultValue: '', description: 'Instance Type')
-        choice(name: 'SECURITY_GROUP', choices: ['jenk-sg', 'lin-sg'], description: 'Instance Security Group')
+        choice(name: 'SECURITY_GROUP', choices: ['winjen-sg', 'lin-sg'], description: 'Instance Security Group')
         choice(name: 'DESTROY', choices: ['yes', 'no'], description: 'Destroy instance')
     }
     stages{

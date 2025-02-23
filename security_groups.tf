@@ -1,4 +1,4 @@
-resource "aws_security_group" "jenk-sg" {
+resource "aws_security_group" "winjen-sg" {
   name = "jenk-sg"
   ingress {
     from_port = 3389
