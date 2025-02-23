@@ -1,15 +1,20 @@
 variable "ami_id" {
-    default = "ami-05b10e08d247fb927"
+    default = ""
     description = "EC2 AMI"
 }
 
 variable "name" {
-    default = "dum01"
+    default = ""
     description = "Instance name"
   
 }
 
 variable "instance_type" {
-    default = "t3.micro"
+    default = ""
     description = "Instance type"
+}
+
+variable "security_group" {
+    default = ""
+    description = "EC2 Instance Security Group"
 }
