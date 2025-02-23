@@ -1,5 +1,5 @@
 resource "aws_security_group" "winjen-sg" {
-  name = "jenk-sg"
+  name = "winjen-sg"
   ingress {
     from_port = 3389
     to_port = 3389
