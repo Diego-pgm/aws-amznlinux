@@ -3,7 +3,7 @@ pipeline{
     parameters {
         string(name: 'AMI_ID', defaultValue: '', description: 'AMI ID to use')
         string(name: 'INSTANCE_NAME', defaultValue: '', description: 'Name of the EC2 instance')
-        string(name: 'INTANCE_TYPE', defaultValue: '', description: 'Instance Type')
+        string(name: 'INSTANCE_TYPE', defaultValue: '', description: 'Instance Type')
     }
     stages{
         stage('Terraform Init'){

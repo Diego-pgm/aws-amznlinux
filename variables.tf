@@ -10,6 +10,6 @@ variable "name" {
 }
 
 variable "instance_type" {
-    default = ""
+    default = "t3.micro"
     description = "Instance type"
 }
